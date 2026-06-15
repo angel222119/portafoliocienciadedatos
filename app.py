@@ -86,8 +86,21 @@ if opcion == "Inicio":
         st.write("**Asignatura:** Técnica Electiva I - Ciencia de Datos")
 
     st.divider()
+st.divider()
 
-    st.markdown("## 📌 Sobre Mí")
+st.markdown("##  Resumen del Proyecto")
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.metric(" Dataset", "50,000")
+
+with col2:
+    st.metric(" Modelos", "3")
+
+with col3:
+    st.metric(" Precisión", "89%")
+    st.markdown("##  Sobre Mí")
 
     st.write("""
     Mi nombre es Luis Angel Escobar Constanza, estudiante de Ingeniería
