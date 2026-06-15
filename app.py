@@ -17,7 +17,7 @@ from textblob import TextBlob
 # --------------------------------
 
 st.set_page_config(
-    page_title="Portafolio de Ciencia de Datos",
+    page_title="Portafolio de ciencia de datos",
     layout="wide"
 )
 
