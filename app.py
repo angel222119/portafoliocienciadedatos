@@ -62,40 +62,12 @@ opcion = st.sidebar.radio(
 if opcion == "Inicio":
 
     st.markdown("""
-    <style>
-    .titulo {
-        text-align: center;
-        font-size: 50px;
-        font-weight: bold;
-        color: #1E88E5;
-        margin-bottom: 20px;
-    }
-
-    .subtitulo {
-        text-align: center;
-        font-size: 25px;
-        color: #666666;
-        margin-bottom: 40px;
-    }
-
-    .caja {
-        background-color: #f5f5f5;
-        padding: 25px;
-        border-radius: 15px;
-        margin-top: 20px;
-    }
-    </style>
+    <h1 style='text-align:center; color:#1E88E5;'>
+    📊 Portafolio Profesional de Ciencia de Datos
+    </h1>
     """, unsafe_allow_html=True)
 
-    st.markdown(
-        '<div class="titulo">📊 Portafolio Profesional de Ciencia de Datos</div>',
-        unsafe_allow_html=True
-    )
-
-    st.markdown(
-        '<div class="subtitulo">Luis Angel Escobar Constanza | SMSS144922</div>',
-        unsafe_allow_html=True
-    )
+    st.markdown("<br>", unsafe_allow_html=True)
 
     col1, col2 = st.columns([1,2])
 
@@ -106,57 +78,44 @@ if opcion == "Inicio":
         )
 
     with col2:
-        st.markdown("""
-        ### 👨‍🎓 Información del Estudiante
+        st.markdown("## 👨‍🎓 Información del Estudiante")
 
-        **Nombre:** Luis Angel Escobar Constanza
+        st.write("**Nombre:** Luis Angel Escobar Constanza")
+        st.write("**Código:** SMSS144922")
+        st.write("**Carrera:** Ingeniería en Sistemas y Redes Informáticas")
+        st.write("**Asignatura:** Técnica Electiva I - Ciencia de Datos")
 
-        **Código:** SMSS144922
+    st.divider()
 
-        **Carrera:** Ingeniería en Sistemas y Redes Informáticas
-
-        **Asignatura:** Técnica Electiva I - Ciencia de Datos
-        """)
-
-    st.markdown("<br><br>", unsafe_allow_html=True)
-
-    st.markdown("""
-    <div class="caja">
-    <h3>📌 Sobre mí</h3>
-
-    Mi nombre es Luis Angel Escobar Constanza, estudiante de Ingeniería en Sistemas y Redes Informáticas.
-
-    Este portafolio presenta técnicas de análisis exploratorio de datos, aprendizaje automático,
-    sistemas de recomendación y análisis de sentimientos utilizando herramientas modernas de Ciencia de Datos.
-
-    El objetivo es demostrar la aplicación práctica de la analítica de datos para apoyar la toma de decisiones.
-    </div>
-    """, unsafe_allow_html=True)
-
-    st.markdown("<br>", unsafe_allow_html=True)
-
-    st.subheader("🎥 Video de Data Storytelling")
-
-    st.info("Sustituye este video por el tuyo antes de entregar.")
-
-    st.video("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+    st.markdown("## 📌 Sobre Mí")
 
     st.write("""
-    Mi nombre es Luis Angel Escobar Constanza, estudiante de Ingeniería en Sistemas y Redes Informáticas.
-    Este portafolio presenta técnicas de análisis exploratorio, aprendizaje automático,
-    sistemas de recomendación y análisis de sentimientos utilizando herramientas modernas
-    de Ciencia de Datos.
+    Mi nombre es Luis Angel Escobar Constanza, estudiante de Ingeniería
+    en Sistemas y Redes Informáticas.
+
+    Este portafolio presenta técnicas de análisis exploratorio de datos,
+    aprendizaje automático, sistemas de recomendación y análisis de
+    sentimientos utilizando herramientas modernas de Ciencia de Datos.
+
+    El objetivo es demostrar la aplicación práctica del análisis de datos
+    para apoyar la toma de decisiones y resolver problemas reales.
     """)
 
-    st.info("")
+    st.divider()
 
-    st.video("")
+    st.markdown("## 🚀 Objetivos del Proyecto")
 
-# ==================================================
-# ANALISIS EXPLORATORIO
-# ==================================================
+    st.write("""
+    • Analizar datos mediante técnicas exploratorias.
 
-elif opcion == "Análisis Exploratorio":
+    • Aplicar modelos de Machine Learning.
+
+    • Implementar un sistema de recomendación.
+
+    • Desarrollar un análisis de sentimientos.
+
+    • Construir una aplicación interactiva utilizando Streamlit.
+    """)
 
     submenu = st.selectbox(
         "Seleccione una opción",
