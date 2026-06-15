@@ -35,7 +35,13 @@ df = cargar_datos()
 # SIDEBAR
 # --------------------------------
 
-st.sidebar.title("📊 Menú Principal")
+st.sidebar.image(
+    "https://cdn-icons-png.flaticon.com/512/2721/2721297.png",
+    width=120
+)
+
+st.sidebar.markdown("## 📚 Menú de Navegación")
+st.sidebar.markdown("---")
 
 opcion = st.sidebar.radio(
     "Seleccione una opción",
@@ -55,16 +61,85 @@ opcion = st.sidebar.radio(
 
 if opcion == "Inicio":
 
-    st.title("📊 Portafolio Profesional de Ciencia de Datos")
+    st.markdown("""
+    <style>
+    .titulo {
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        color: #1E88E5;
+        margin-bottom: 20px;
+    }
 
-    st.header("Luis Angel Escobar Constanza")
-    st.subheader("Código: SMSS144922")
+    .subtitulo {
+        text-align: center;
+        font-size: 25px;
+        color: #666666;
+        margin-bottom: 40px;
+    }
+
+    .caja {
+        background-color: #f5f5f5;
+        padding: 25px;
+        border-radius: 15px;
+        margin-top: 20px;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+    st.markdown(
+        '<div class="titulo">📊 Portafolio Profesional de Ciencia de Datos</div>',
+        unsafe_allow_html=True
+    )
+
+    st.markdown(
+        '<div class="subtitulo">Luis Angel Escobar Constanza | SMSS144922</div>',
+        unsafe_allow_html=True
+    )
+
+    col1, col2 = st.columns([1,2])
+
+    with col1:
+        st.image(
+            "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+            width=220
+        )
+
+    with col2:
+        st.markdown("""
+        ### 👨‍🎓 Información del Estudiante
+
+        **Nombre:** Luis Angel Escobar Constanza
+
+        **Código:** SMSS144922
+
+        **Carrera:** Ingeniería en Sistemas y Redes Informáticas
+
+        **Asignatura:** Técnica Electiva I - Ciencia de Datos
+        """)
+
+    st.markdown("<br><br>", unsafe_allow_html=True)
 
     st.markdown("""
-    **Carrera:** Ingeniería en Sistemas y Redes Informáticas
+    <div class="caja">
+    <h3>📌 Sobre mí</h3>
 
-    **Asignatura:** Técnica Electiva I - Ciencia de Datos
-    """)
+    Mi nombre es Luis Angel Escobar Constanza, estudiante de Ingeniería en Sistemas y Redes Informáticas.
+
+    Este portafolio presenta técnicas de análisis exploratorio de datos, aprendizaje automático,
+    sistemas de recomendación y análisis de sentimientos utilizando herramientas modernas de Ciencia de Datos.
+
+    El objetivo es demostrar la aplicación práctica de la analítica de datos para apoyar la toma de decisiones.
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    st.subheader("🎥 Video de Data Storytelling")
+
+    st.info("Sustituye este video por el tuyo antes de entregar.")
+
+    st.video("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
 
     st.write("""
     Mi nombre es Luis Angel Escobar Constanza, estudiante de Ingeniería en Sistemas y Redes Informáticas.
