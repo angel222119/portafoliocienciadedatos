@@ -63,7 +63,7 @@ if opcion == "Inicio":
 
     st.markdown("""
     <h1 style='text-align:center; color:#1E88E5;'>
-    📊 Portafolio Profesional de Ciencia de Datos
+     Portafolio Profesional de Ciencia de Datos
     </h1>
     """, unsafe_allow_html=True)
 
@@ -73,12 +73,12 @@ if opcion == "Inicio":
 
     with col1:
         st.image(
-            "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+            "c:\Users\angel\OneDrive\Desktop\WhatsApp Image 2026-06-14 at 18.55.48.jpeg",
             width=220
         )
 
     with col2:
-        st.markdown("## 👨‍🎓 Información del Estudiante")
+        st.markdown("##  Información sobre mi")
 
         st.write("**Nombre:** Luis Angel Escobar Constanza")
         st.write("**Código:** SMSS144922")
@@ -103,7 +103,7 @@ if opcion == "Inicio":
 
     st.divider()
 
-    st.markdown("## 🚀 Objetivos del Proyecto")
+    st.markdown("##  Objetivos del Proyecto")
 
     st.write("""
     • Analizar datos mediante técnicas exploratorias.
@@ -284,7 +284,7 @@ elif opcion == "Aprendizaje Automático":
 
 elif opcion == "Sistema de Recomendación":
 
-    st.header("🎬 Sistema de Recomendación de Películas")
+    st.header(" Sistema de Recomendación de Películas")
 
     peliculas = {
         "Titanic":["Avatar","The Notebook","Pearl Harbor"],
@@ -352,7 +352,7 @@ elif opcion == "Carga de Archivos":
 
 elif opcion == "Análisis de Sentimientos":
 
-    st.header("😊 Análisis de Sentimientos")
+    st.header(" Análisis de Sentimientos")
 
     texto = st.text_area(
         "Ingrese una opinión"
