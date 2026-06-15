@@ -73,7 +73,7 @@ if opcion == "Inicio":
 
     with col1:
         st.image(
-            "c:\Users\angel\OneDrive\Desktop\WhatsApp Image 2026-06-14 at 18.55.48.jpeg",
+            "WhatsApp Image 2026-06-14 at 18.55.48.jpeg",
             width=220
         )
 
