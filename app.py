@@ -73,7 +73,7 @@ if opcion == "Inicio":
 
     with col1:
         st.image(
-            "",
+            "imagen.png",
             width=220
         )
 
